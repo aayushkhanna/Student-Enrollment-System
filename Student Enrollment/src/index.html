@@ -1,0 +1,162 @@
+<!-----
+    Aayush Khanna
+    21-07-2021
+    Student Enrollment Form 
+    Trainee Technology (Web Development)
+
+    This is HTML file containing all the fields of form  and calling the java script file for further
+    validation check
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Student Enrollment Portal</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="Style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+</head>
+<body>
+
+    <div class="main">
+        <div class="main-form">
+            <div class="header">Student Enrollment Form</div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-lg-6 form">
+
+                        <!---Form containing different fields to be filled by user-->
+                        <form id="form" class="row g-3" >
+                            <div class="col-sm-12">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" class="form-control" name="name" id="name" required>
+                                    <div class="error name" >**Please Enter a Name**</div>
+                            </div>
+                            <div class="col-sm-12">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="text" class="form-control" name="email" id="email" required>
+                                <div class="error email" >**Please Enter a valid Email**</div>
+
+                            
+                            </div>
+                            <div class="col-sm-12">
+                                <label for="website" class="form-label">Website</label>
+                                    <input type="text" class="form-control" name="website" id="website"
+                                        aria-describedby="inputGroupPrepend" required>
+                                <div class="error website" >**Please Enter a valid Website Link**</div>
+
+                                
+                            </div>
+                            <div class="col-sm-12">
+                                <label for="link" class="form-label">Image Link</label>
+                                <input type="text" class="form-control" name="image" id="link" required>
+                                <div class="error image" >**Please Enter a valid Image-Link**</div>
+
+                              
+                            </div>
+                            <div style="display: flex;" class="col-sm-12">
+                                <label for="gender" class="form-label">Gender</label>
+                                <div style="display:inline-block">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="male" id="flexRadioDefault1">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                          Male
+                                        </label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="Female" id="flexRadioDefault2" checked>
+                                        <label class="form-check-label" for="flexRadioDefault2">
+                                          Female
+                                        </label>
+                                      </div>
+                                </div>
+
+                            </div>
+                            <div style="display: flex;" class="col-sm-12">
+                                <label for="skills" class="form-label">Skills</label>
+                                <div style="display: flex;">
+                                    <div class="form-check">
+                                        <input class="form-check-input" name="java" type="checkbox"  id="java">
+                                        <label class="form-check-label" for="java">
+                                          Java
+                                        </label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input class="form-check-input" name="html" type="checkbox" id="html">
+                                        <label class="form-check-label" for="html">
+                                          Html
+                                        </label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input class="form-check-input" name="css" type="checkbox"  id="css">
+                                        <label class="form-check-label" for="css">
+                                          Css
+                                        </label>
+                                      </div>
+                                </div>
+                                <div class="error skill" >**Please select at least one skill**</div>
+
+                            </div>
+                       
+                        </form>
+                        
+                        <div >
+                            <button onclick="Enroll()" class="btn btn-primary submit">Enroll Student</button>
+                            <button onclick="Reset()" class="btn btn-danger clear">Clear</button>
+
+                        </div>
+                        
+    
+                       
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-lg-6 students">
+                            <h3>Enrolled students</h3>
+                            <div class="list" >
+                                <div class="label" >
+                                    <div class="row" >
+                                        <div class="col-xs-8 col-sm-8">
+                                           <span>Description</span>
+                                        </div>
+                                        <div class="col-xs-4 col-sm-4">
+                                            <span>Image</span>
+
+                                        </div>  
+                                    </div>
+                                </div>
+                                <div class="data">
+                                        <div class="row" >
+                                            <div class="col-xs-8 col-sm-8">
+                                               <h5>John Doe</h5>
+                                               <h5>Male</h5>
+                                               <h5>John@gmail.com</h5>
+                                               <a target="_blank" href="https://en.wikipedia.org/wiki/Jhon" >John.com</a>
+                                               <h5>Java,Css</h5>
+
+
+                                            </div>
+                                            <div style="text-align:center;padding:5px"  class="col-xs-4 col-sm-4">
+                                                <image style="height:80px;margin:auto;width: 100%;" src="https://upload.wikimedia.org/wikipedia/commons/0/02/John_in_2020.jpg" ></image>            
+                                    
+                                            </div>  
+                                        </div>
+                                </div>
+                             
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                copyright 2020 2021 by Fresher Training
+            </div>
+        </div>
+    </div>
+    <script src="Validation.js"></script>
+
+</body>
+</html>
+
+
+

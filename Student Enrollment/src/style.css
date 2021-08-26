@@ -1,0 +1,179 @@
+.form-control {
+    display: inline-block;
+    width: 50%
+}
+
+.form-label {
+    width: 100px
+}
+
+.main {
+    min-height: 100vh;
+}
+
+h3,
+h2 {
+    color: black;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+.main-form {
+    min-height: 100%
+}
+
+.main-form .header,
+.main-form .footer {
+    background-color: aquamarine;
+    color: white;
+    height: 40px;
+    margin: auto;
+    text-align: center;
+    padding-top: 8px;
+}
+
+.main-form .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    padding-top: 0;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.container {
+    margin: 0;
+    width: 99vw;
+}
+
+.form-label {
+    padding: 0
+}
+
+.row {
+    margin: 0
+}
+
+form>div {
+    margin: 10px 0;
+}
+
+.container {
+    padding: 30px 50px;
+}
+
+.form-check {
+    margin-left: 8px;
+}
+
+.form {
+    border:0;
+    border-right: 3px solid rgb(85, 189, 168);
+    padding-bottom: 35px;
+}
+
+.students {
+    text-align: center;
+}
+
+.label {
+    background-color: rgb(138, 245, 7);
+    display: block;
+    height: 25px;
+    padding-top:7px;
+    text-align: left;
+}
+.label .row div{
+
+
+    padding:0;
+    font-size:15px;
+    font-weight:700;
+}
+.label .row div:last-child{
+    padding-left: 6px;
+}
+
+.list {
+    margin: auto;
+}
+
+.data {
+    text-align: left;
+    border: 1px solid black;
+    border-top: 0;
+    border-bottom: 0;
+}
+
+.data h5 {
+    margin: 0;
+}
+.data h5:first-child{
+    padding-top:5px
+}
+
+.data>div {
+    border-bottom: 1px solid black;
+    animation: slide-up 0.4s ease;
+
+}
+
+.data .row > *:last-child {
+    border-left: 1px solid black;
+    text-align:center;padding:5px
+
+}
+.error{
+    color:red;
+    display:none;
+    margin-left: 110px;
+}
+@media (max-width: 350px){
+    .form-control{
+        width:100%
+    }
+}
+@keyframes slide-up {
+    0% {
+        opacity: 0;
+        
+    }
+    50%{
+        opacity:0.5;
+    }
+    100% {
+        opacity: 1;
+        
+    }
+}
+.students{
+   padding-bottom: 50px;
+}
+.list{
+    max-width: 450px;
+    margin-top: 25px;
+}
+@media (max-width: 768px){
+    .form {
+        border-bottom: 3px solid rgb(7, 152, 241);
+        border-right: 0;
+    }
+}
+h3{
+    font-weight: 700;
+}
+.header{
+    font-weight: 700;
+}
+
+img{
+    height:80px;margin:auto;width: 100%;
+}
